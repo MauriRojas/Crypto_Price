@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Crypto Price",
+  "version": "1.0",
+
+  "description": "Muestra el precio del Bitcoin en dolares estadounidenses.",
+  "homepage_url": "https://github.com/MauriRojas/Crypto_Price",
+  "icons": {
+    "48": "icons/coin-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/coin-48.png",
+    "default_title": "Crypto Price",
+    "default_popup": "popup/precio_actual.html"
+  }
+}
