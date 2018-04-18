@@ -11,8 +11,9 @@ html, body {
   cursor: pointer;
 }
 
-.precio:hover {
-  background-color: #CFF2F2;
+#valor:hover {
+  cursor: pointer;
+  background-color: #69e5fb;
 }
 
 .precio {
@@ -22,4 +23,5 @@ html, body {
 
 #valor {
   text-align: center;
+  background-color: #CFF2F2;
 }
