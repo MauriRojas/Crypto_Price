@@ -1,4 +1,7 @@
-html, body {width: 100px;}
+html, body {
+  width: 100px;
+  font-family: sans-serif;
+}
 
 .button {
   margin: 3% auto;
@@ -13,5 +16,10 @@ html, body {width: 100px;}
 }
 
 .precio {
-  background-color: #E5F2F2;
+  text-align: center;
+  background-color: gold;
+}
+
+#valor {
+  text-align: center;
 }
