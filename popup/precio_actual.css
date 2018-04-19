@@ -11,17 +11,22 @@ html, body {
   cursor: pointer;
 }
 
+#valor {
+  text-align: center;
+  background-color: #cff2f2;
+}
+
 #valor:hover {
   cursor: pointer;
   background-color: #69e5fb;
 }
 
-.precio {
+#coinName {
   text-align: center;
   background-color: gold;
 }
 
-#valor {
-  text-align: center;
-  background-color: #CFF2F2;
+#coinName:hover {
+  cursor: pointer;
+  background-color: #dce000;
 }
