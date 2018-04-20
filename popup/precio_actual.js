@@ -4,7 +4,12 @@ function getValue() {
   json.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var object = JSON.parse(this.responseText);
-      var found = object.filter(function(item) { return item.id === "bitcoin"; });
+
+      var coinId = loadChosenCoin();
+
+      var found = object.filter(function(item) { return item.id === coinId; });
+
+      document.getElementById("coinName").innerHTML = found[0].name;
       document.getElementById("valor").innerHTML = "$" + found[0].price_usd;
     }
   };
@@ -18,6 +23,14 @@ function getValue() {
 
 function chooseCoin(){
   window.location.href = "choose_currency.html";
+}
+
+function loadChosenCoin(){
+    //var coinId = storage.getItem("chosenCoin");
+    var searchString = window.location.search.substr(1);
+    var pair = searchString.split("=");
+    var coinId = pair[1];
+    return coinId;
 }
 
 getValue();
