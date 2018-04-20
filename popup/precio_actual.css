@@ -1,24 +1,26 @@
-html, body {
-  width: 100px;
-  font-family: sans-serif;
+@font-face {
+    font-family: 'Alef';
+    src: url("../fonts/Alef-Regular.ttf");
 }
 
-.button {
-  margin: 3% auto;
-  padding: 4px;
-  text-align: center;
-  font-size: 1.5em;
+html, body {
+  width: 100px;
+  font-family: Alef, sans-serif;
+}
+
+#coinName:hover {
   cursor: pointer;
+  background-color: #dce000;
+}
+
+#coinName {
+  text-align: center;
+  background-color: gold;
 }
 
 #valor:hover {
   cursor: pointer;
   background-color: #69e5fb;
-}
-
-.precio {
-  text-align: center;
-  background-color: gold;
 }
 
 #valor {

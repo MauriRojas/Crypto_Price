@@ -15,5 +15,11 @@ function getValue() {
   );
   json.send();
 }
+
+function chooseCoin(){
+  window.location.href = "choose_currency.html";
+}
+
 getValue();
 document.getElementById("valor").addEventListener("click", function() {getValue()});
+document.getElementById("coinName").addEventListener("click", function(){chooseCoin()});

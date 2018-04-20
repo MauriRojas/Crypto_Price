@@ -1,17 +1,23 @@
+@font-face {
+    font-family: 'Alef';
+    src: url("../fonts/Alef-Regular.ttf");
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background-color: #a2fe93;
-  font-family: sans-serif;
+  font-family: Alef, sans-serif;
+  font-size: 0.9em;
 }
 
 ul li {
-  border-top: 2px solid #36b63b;
+  color: #414141;
   text-align: center;
 }
 
 ul li:hover {
   cursor: pointer;
-  background-color: #229400;
+  color: #45a6eb;
+  background-color: #e8e8e8;
 }
