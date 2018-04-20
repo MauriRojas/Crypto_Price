@@ -26,7 +26,6 @@ function chooseCoin(){
 }
 
 function loadChosenCoin(){
-    //var coinId = storage.getItem("chosenCoin");
     var searchString = window.location.search.substr(1);
     var pair = searchString.split("=");
     var coinId = pair[1];
