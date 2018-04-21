@@ -1,4 +1,5 @@
 function getValue() {
+  document.getElementById("coinName").innerHTML = "Currency";
   document.getElementById("valor").innerHTML = "Loading";
   var json = new XMLHttpRequest();
   json.onreadystatechange = function() {

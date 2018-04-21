@@ -1,29 +1,30 @@
-@font-face {
-    font-family: 'Alef';
-    src: url("../fonts/Alef-Regular.ttf");
-}
-
 html, body {
   width: 100px;
-  font-family: Alef, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #5e5e5e;
+  margin: .2em;
+  margin-right: 10px;
 }
 
 #coinName:hover {
   cursor: pointer;
-  background-color: #dce000;
+  color: #45a6eb;
 }
 
 #coinName {
   text-align: center;
-  background-color: gold;
 }
 
 #valor:hover {
   cursor: pointer;
-  background-color: #69e5fb;
+  color: #45a6eb;
 }
 
 #valor {
   text-align: center;
-  background-color: #CFF2F2;
+}
+
+hr {
+  margin: 0px;
+  color: #a8a8a8 !important;
 }
