@@ -4,11 +4,11 @@ function getValue() {
   var json = new XMLHttpRequest();
   json.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var object = JSON.parse(this.responseText);
+      var response = JSON.parse(this.responseText);
 
       var coinId = loadChosenCoin();
 
-      var found = object.filter(function(item) { return item.id === coinId; });
+      var found = response.filter(function(item) { return item.id === coinId; });
 
       document.getElementById("coinName").innerHTML = found[0].name;
       document.getElementById("valor").innerHTML = "$" + found[0].price_usd;
